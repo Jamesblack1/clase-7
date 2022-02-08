@@ -1,0 +1,44 @@
+<h2>Formularios <strong>Reactive</strong></h2>
+<hr>
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Nombre</label>
+        <div class="col-8">
+            <input 
+            type="text" 
+            name="nombre" 
+            placeholder="Nombre"
+            formControlName="nombre">
+        </div>
+    </div>    
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Apellido Paterno</label>
+        <div class="col-8">
+            <input type="text" name="paterno" placeholder="Apellido Paterno" formControlName="paterno">
+        </div>
+    </div>  
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Apellido Materno</label>
+        <div class="col-8">
+            <input type="text" name="materno" placeholder="Apellido Materno" formControlName="materno">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label class="col-2 col-form-label">Correo</label>
+        <div class="col-8">
+            <input type="email" name="correo" placeholder="Correo" formControlName="correo">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label class="col-2 col-form-label">&nbsp;</label>
+        <div class="input-group col">
+          <button type="submit" class="btn btn-outline-primary btn-block">
+            Guardar
+          </button>
+        </div>
+      </div>
+
+</form>
